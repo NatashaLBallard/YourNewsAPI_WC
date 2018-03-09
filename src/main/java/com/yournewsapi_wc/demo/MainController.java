@@ -19,7 +19,7 @@ public class MainController {
         RestTemplate restTemplate = new RestTemplate();
         TopNews topNews = restTemplate.getForObject("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=90e180a070b44a8ea17d3e4ad5a080c0", TopNews.class);
 
-        System.out.println(topNews.getTopNewsArticles());
+        System.out.println(topNews.getArticles());
         return topNews.toString();
 
 

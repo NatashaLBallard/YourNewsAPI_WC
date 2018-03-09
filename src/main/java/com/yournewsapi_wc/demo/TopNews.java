@@ -12,12 +12,12 @@ public class TopNews {
 
     private int totalResults;
 
-    private ArrayList<Articles> topNewsArticles;
+    private ArrayList<Articles> articles;
 
 
 
     public TopNews() {
-        this.topNewsArticles = new ArrayList<>();
+        this.articles = new ArrayList<>();
     }
 
     public String getStatus() {
@@ -36,21 +36,14 @@ public class TopNews {
         this.totalResults = totalResults;
     }
 
-    @Override
-    public String toString() {
-        return "TopNews{" +
-                "status='" + status + '\'' +
-                ", totalResults=" + totalResults +
-                ", topNewsArticles=" + topNewsArticles +
-                '}';
+
+
+    public ArrayList<Articles> getArticles() {
+        return articles;
     }
 
-    public ArrayList<Articles> getTopNewsArticles() {
-        return topNewsArticles;
-    }
-
-    public void setTopNewsArticles(ArrayList<Articles> topNewsArticles) {
-        this.topNewsArticles = topNewsArticles;
+    public void setArticles(ArrayList<Articles> articles) {
+        this.articles = articles;
     }
 
 //    public ArrayList<Articles> getTopNewsArticles() {
@@ -60,4 +53,13 @@ public class TopNews {
 //    public void setTopNewsArticles(ArrayList<Articles> topNewsArticles) {
 //        this.topNewsArticles = topNewsArticles;
 //    }
+
+    @Override
+    public String toString() {
+        return "TopNews{" +
+                "status='" + status + '\'' +
+                ", totalResults=" + totalResults +
+                ", articles=" + articles +
+                '}';
+    }
 }

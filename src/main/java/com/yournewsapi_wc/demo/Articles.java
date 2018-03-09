@@ -96,4 +96,19 @@ public class Articles {
     public void setSource(Source source) {
         this.source = source;
     }
+
+
+    @Override
+    public String toString() {
+        return "Articles{" +
+                "id=" + id +
+                ", source=" + source +
+                ", author='" + author + '\'' +
+                ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", url='" + url + '\'' +
+                ", urlToImage='" + urlToImage + '\'' +
+                ", publishedAt='" + publishedAt + '\'' +
+                '}';
+    }
 }
